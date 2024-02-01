@@ -1,0 +1,36 @@
+.frameParent,
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: 100%;
+}
+.landingPage {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-15xl) 29px 110px var(--padding-11xl);
+  box-sizing: border-box;
+  gap: 108px;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    gap: var(--gap-base);
+  }
+  .landingPage {
+    gap: 54px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .landingPage {
+    gap: 27px;
+  }
+}

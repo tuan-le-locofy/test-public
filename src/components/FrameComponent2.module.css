@@ -1,0 +1,113 @@
+.bestProjectOf,
+.ourRecentProjects {
+  position: relative;
+  line-height: 120%;
+}
+.ourRecentProjects {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.sobhahearlandvillasgroupChild {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  min-height: 45px;
+}
+.wrapperGroup11Child {
+  height: 100%;
+  width: 100%;
+  min-height: 45px;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 13px;
+  transform: scale(1.667);
+}
+.wrapperGroup11 {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sobhahearlandvillasgroup,
+.starratinggroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.starratinggroup {
+  align-self: stretch;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  font-size: var(--font3-size);
+}
+.bestprojectcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-base);
+}
+.bestprojectcontainer,
+.bestprojectcontainerParent,
+.frameParent {
+  align-self: stretch;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  display: grid;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-xl);
+  grid-template-columns: repeat(3, minmax(335px, 1fr));
+}
+.bestprojectcontainerParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-26xl);
+  text-align: left;
+  font-size: var(--font-size);
+  color: var(--color-black);
+  font-family: var(--font);
+}
+@media screen and (max-width: 1200px) {
+  .frameParent {
+    grid-template-columns: repeat(2, minmax(335px, 581px));
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .ourRecentProjects {
+    font-size: var(--font-size-21xl);
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .starratinggroup {
+    flex-wrap: wrap;
+  }
+  .frameParent {
+    grid-template-columns: minmax(335px, 1fr);
+  }
+  .bestprojectcontainerParent {
+    gap: var(--gap-3xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .ourRecentProjects {
+    font-size: var(--font-size-11xl);
+    line-height: 36px;
+  }
+}
